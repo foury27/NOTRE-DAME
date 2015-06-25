@@ -5,7 +5,7 @@ from matplotlib import pyplot
 import cv2
 
 # sift features
-Nangles = 8# i added this line to distinguish
+Nangles = 8
 Nbins = 4
 Nsamples = Nbins**2
 alpha = 9.0
