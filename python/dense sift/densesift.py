@@ -60,7 +60,7 @@ class DsiftExtractor:
         bincenter = np.array(range(1,Nbins*2,2)) / 2.0 / Nbins * self.pS - 0.5
         bincenter_h, bincenter_w = np.meshgrid(bincenter,bincenter)
         bincenter_h.resize((bincenter_h.size,1))
-        bincenter_w.resize((bincenter_w.size,1))# i added the second change
+        bincenter_w.resize((bincenter_w.size,1))
         dist_ph = abs(sample_ph - bincenter_h)
         dist_pw = abs(sample_pw - bincenter_w)
         weights_h = dist_ph / sample_res
