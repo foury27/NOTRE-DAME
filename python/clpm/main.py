@@ -11,7 +11,7 @@ from numpy.linalg import inv
 L=read_csv.readCSV("/Users/foury/Documents/github/amygit/FR/FR_SR/FR_SR/testimg2/high/low_downsampled/low_d.csv")
 H=read_csv.readCSV("/Users/foury/Documents/github/amygit/FR/FR_SR/FR_SR/testimg2/high/high_downsampled/high_d.csv")
 #calculate delta
-M=H[0].size
+M=H[0].size#i add the first change here
 m=L[0].size
 print M,m
 Nt=len(H)
